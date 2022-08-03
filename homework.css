@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #111;
+}
+header ul li button{
+    font-size: 14px;
+    background-color: #4584ef;
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main{
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.main .searchbox .search{
+    padding-left: 45px;
+    padding-right: 60px;
+    padding: 13px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+
+}
+.main .searchbox .icons{
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    align-items: center;
+    padding: 12px 20px;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+.buttons{
+    margin-top: 20px;
+}
+.buttons button{
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color: #555;
+    padding: 10 20px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 20px;
+}
+.buttons button:hover{
+    color: red;
+    background-color: black;
+}
+.main .lang{
+    margin-top: 20px;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+
+}
+.footer .row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.footer .row ul{
+    display: flex;
+}
+.footer .row ul li{
+    padding-right: 20px;
+    list-style: none;
+}
+.footer .row ul li a{
+    text-decoration: none;
+    color: #555;
+}
+.footer .row ul li a:hover{
+    color: red;
+}
+/*mobile view*/
+@media(min-width:620px){
+    header ul li button{
+        background-color: tomato;
+    }
+}
